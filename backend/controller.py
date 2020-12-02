@@ -52,7 +52,6 @@ def get_players_by_stat(stat):
     players = models.get_by_stat(stat)
     player_list = []
     if players:
-        print(players)
         for player in players:
             data = {}
             data["name"] = player[1]

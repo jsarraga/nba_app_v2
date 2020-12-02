@@ -12,6 +12,7 @@ def get_all_players():
         players = cur.fetchall()
         return players
 
+#fix for most recent year
 def get_by_stat(stat):
         with sqlite3.connect(DATABASE) as conn:
                 cur = conn.cursor()
